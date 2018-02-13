@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import Store from './Store';
+import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const root = document.createElement('div');
+root.id = 'app';
+document.body.appendChild(root);
+
+const store = new Store();
+
+ReactDOM.render(
+  <App store={store} />,
+  document.querySelector('#app')
+);
