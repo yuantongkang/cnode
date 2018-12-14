@@ -36,7 +36,7 @@ class Navbar extends PureComponent {
       <nav style={styles.wrapper} className="bg">
         <Link style={styles.icon} to="/">
           {console.log(styles)}
-          <img src="//o4j806krb.qnssl.com/public/images/cnodejs.svg" alt="" style={styles.img} />
+          <img src="http://cdn.kangyuantong.top/cnodejs_light.svg" alt="" style={styles.img} />
         </Link>
       </nav>
     );
